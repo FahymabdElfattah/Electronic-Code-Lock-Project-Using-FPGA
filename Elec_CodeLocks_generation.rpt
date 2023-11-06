@@ -1,0 +1,150 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/SoC_Project/ --output-directory=C:/SoC_Project/TP_Montre/ --report-file=bsf:C:/SoC_Project/TP_Montre.bsf --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C20F484C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/SoC_Project/TP_Montre.qsys
+Progress: Loading SoC_Project/TP_Montre.qsys
+Progress: Reading input file
+Progress: Adding CLK_50 [clock_source 13.0]
+Progress: Parameterizing module CLK_50
+Progress: Adding PLL [altera_up_clocks 13.0]
+Progress: Parameterizing module PLL
+Progress: Adding CPU [altera_nios2_qsys 13.0]
+Progress: Parameterizing module CPU
+Progress: Adding SDRAM_controller [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module SDRAM_controller
+Progress: Adding JTAG_UART [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module JTAG_UART
+Progress: Adding SYS_Id [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module SYS_Id
+Progress: Adding Timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module Timer
+Progress: Adding KEY [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module KEY
+Progress: Adding SW [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module SW
+Progress: Adding HEX [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module HEX
+Progress: Adding LEDG [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module LEDG
+Progress: Adding LEDR [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module LEDR
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: TP_Montre.SYS_Id: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: TP_Montre.SYS_Id: Time stamp will be automatically updated when this component is generated.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/SoC_Project/ --output-directory=C:/SoC_Project/TP_Montre/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:C:/SoC_Project/TP_Montre.sopcinfo --report-file=html:C:/SoC_Project/TP_Montre.html --report-file=qip:C:/SoC_Project/TP_Montre/synthesis/TP_Montre.qip --report-file=cmp:C:/SoC_Project/TP_Montre.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C20F484C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/SoC_Project/TP_Montre.qsys --language=VHDL
+Progress: Loading SoC_Project/TP_Montre.qsys
+Progress: Reading input file
+Progress: Adding CLK_50 [clock_source 13.0]
+Progress: Parameterizing module CLK_50
+Progress: Adding PLL [altera_up_clocks 13.0]
+Progress: Parameterizing module PLL
+Progress: Adding CPU [altera_nios2_qsys 13.0]
+Progress: Parameterizing module CPU
+Progress: Adding SDRAM_controller [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module SDRAM_controller
+Progress: Adding JTAG_UART [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module JTAG_UART
+Progress: Adding SYS_Id [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module SYS_Id
+Progress: Adding Timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module Timer
+Progress: Adding KEY [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module KEY
+Progress: Adding SW [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module SW
+Progress: Adding HEX [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module HEX
+Progress: Adding LEDG [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module LEDG
+Progress: Adding LEDR [altera_up_avalon_parallel_port 13.0]
+Progress: Parameterizing module LEDR
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: TP_Montre.SYS_Id: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: TP_Montre.SYS_Id: Time stamp will be automatically updated when this component is generated.
+Info: TP_Montre: Generating TP_Montre "TP_Montre" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 12 modules, 38 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 24 modules, 74 connections
+Info: merlin_domain_transform: After transform: 48 modules, 199 connections
+Info: merlin_router_transform: After transform: 60 modules, 235 connections
+Info: merlin_burst_transform: After transform: 61 modules, 238 connections
+Info: reset_adaptation_transform: After transform: 62 modules, 240 connections
+Info: merlin_network_to_switch_transform: After transform: 85 modules, 288 connections
+Info: merlin_width_transform: After transform: 87 modules, 294 connections
+Info: merlin_mm_transform: After transform: 87 modules, 294 connections
+Info: merlin_interrupt_mapper_transform: After transform: 88 modules, 297 connections
+Info: PLL: Starting Generation of Required Clocks for DE-Series Boards
+Info: PLL: "TP_Montre" instantiated altera_up_clocks "PLL"
+Info: CPU: Starting RTL generation for module 'TP_Montre_CPU'
+Info: CPU:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=TP_Montre_CPU --dir=C:/Users/INPT/AppData/Local/Temp/alt9278_3441117049640343321.dir/0002_CPU_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/INPT/AppData/Local/Temp/alt9278_3441117049640343321.dir/0002_CPU_gen//TP_Montre_CPU_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: CPU: # 2022.10.13 12:06:43 (*) Starting Nios II generation
+Info: CPU: # 2022.10.13 12:06:43 (*)   Checking for plaintext license.
+Info: CPU: # 2022.10.13 12:06:43 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info: CPU: # 2022.10.13 12:06:43 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: CPU: # 2022.10.13 12:06:44 (*)   Plaintext license not found.
+Info: CPU: # 2022.10.13 12:06:44 (*)   No license required to generate encrypted Nios II/e.
+Info: CPU: # 2022.10.13 12:06:44 (*)   Elaborating CPU configuration settings
+Info: CPU: # 2022.10.13 12:06:44 (*)   Creating all objects for CPU
+Info: CPU: # 2022.10.13 12:06:45 (*)   Generating RTL from CPU objects
+Info: CPU: # 2022.10.13 12:06:45 (*)   Creating plain-text RTL
+Info: CPU: # 2022.10.13 12:06:47 (*) Done Nios II generation
+Info: CPU: Done RTL generation for module 'TP_Montre_CPU'
+Info: CPU: "TP_Montre" instantiated altera_nios2_qsys "CPU"
+Info: SDRAM_controller: Starting RTL generation for module 'TP_Montre_SDRAM_controller'
+Info: SDRAM_controller:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=TP_Montre_SDRAM_controller --dir=C:/Users/INPT/AppData/Local/Temp/alt9278_3441117049640343321.dir/0003_SDRAM_controller_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/INPT/AppData/Local/Temp/alt9278_3441117049640343321.dir/0003_SDRAM_controller_gen//TP_Montre_SDRAM_controller_component_configuration.pl  --do_build_sim=0  ]
+Info: SDRAM_controller: Done RTL generation for module 'TP_Montre_SDRAM_controller'
+Info: SDRAM_controller: "TP_Montre" instantiated altera_avalon_new_sdram_controller "SDRAM_controller"
+Info: JTAG_UART: Starting RTL generation for module 'TP_Montre_JTAG_UART'
+Info: JTAG_UART:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=TP_Montre_JTAG_UART --dir=C:/Users/INPT/AppData/Local/Temp/alt9278_3441117049640343321.dir/0004_JTAG_UART_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/INPT/AppData/Local/Temp/alt9278_3441117049640343321.dir/0004_JTAG_UART_gen//TP_Montre_JTAG_UART_component_configuration.pl  --do_build_sim=0  ]
+Info: JTAG_UART: Done RTL generation for module 'TP_Montre_JTAG_UART'
+Info: JTAG_UART: "TP_Montre" instantiated altera_avalon_jtag_uart "JTAG_UART"
+Info: SYS_Id: "TP_Montre" instantiated altera_avalon_sysid_qsys "SYS_Id"
+Info: Timer: Starting RTL generation for module 'TP_Montre_Timer'
+Info: Timer:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=TP_Montre_Timer --dir=C:/Users/INPT/AppData/Local/Temp/alt9278_3441117049640343321.dir/0006_Timer_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/INPT/AppData/Local/Temp/alt9278_3441117049640343321.dir/0006_Timer_gen//TP_Montre_Timer_component_configuration.pl  --do_build_sim=0  ]
+Info: Timer: Done RTL generation for module 'TP_Montre_Timer'
+Info: Timer: "TP_Montre" instantiated altera_avalon_timer "Timer"
+Info: KEY: Starting Generation of Parallel Port
+Info: KEY: "TP_Montre" instantiated altera_up_avalon_parallel_port "KEY"
+Info: SW: Starting Generation of Parallel Port
+Info: SW: "TP_Montre" instantiated altera_up_avalon_parallel_port "SW"
+Info: HEX: Starting Generation of Parallel Port
+Info: HEX: "TP_Montre" instantiated altera_up_avalon_parallel_port "HEX"
+Info: LEDG: Starting Generation of Parallel Port
+Info: LEDG: "TP_Montre" instantiated altera_up_avalon_parallel_port "LEDG"
+Info: LEDR: Starting Generation of Parallel Port
+Info: LEDR: "TP_Montre" instantiated altera_up_avalon_parallel_port "LEDR"
+Info: CPU_instruction_master_translator: "TP_Montre" instantiated altera_merlin_master_translator "CPU_instruction_master_translator"
+Info: CPU_jtag_debug_module_translator: "TP_Montre" instantiated altera_merlin_slave_translator "CPU_jtag_debug_module_translator"
+Info: CPU_instruction_master_translator_avalon_universal_master_0_agent: "TP_Montre" instantiated altera_merlin_master_agent "CPU_instruction_master_translator_avalon_universal_master_0_agent"
+Info: CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent: "TP_Montre" instantiated altera_merlin_slave_agent "CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "TP_Montre" instantiated altera_avalon_sc_fifo "CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "TP_Montre" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "TP_Montre" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "TP_Montre" instantiated altera_merlin_router "id_router"
+Info: id_router_001: "TP_Montre" instantiated altera_merlin_router "id_router_001"
+Info: id_router_002: "TP_Montre" instantiated altera_merlin_router "id_router_002"
+Info: burst_adapter: "TP_Montre" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info: rst_controller: "TP_Montre" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "TP_Montre" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "TP_Montre" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: "TP_Montre" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux_002: "TP_Montre" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_mux: "TP_Montre" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file C:/SoC_Project/TP_Montre/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "TP_Montre" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file C:/SoC_Project/TP_Montre/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: width_adapter: "TP_Montre" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file C:/SoC_Project/TP_Montre/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/SoC_Project/TP_Montre/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: irq_mapper: "TP_Montre" instantiated altera_irq_mapper "irq_mapper"
+Info: TP_Montre: Done TP_Montre" with 32 modules, 142 files, 3064237 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

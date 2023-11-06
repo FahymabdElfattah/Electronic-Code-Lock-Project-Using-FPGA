@@ -1,0 +1,152 @@
+Info: Starting: Create testbench Qsys system
+Info: C:/Users/Fahym/Desktop/SoC_Project/TP_Montre/testbench/TP_Montre.ipx
+Info: ip-generate --project-directory=C:/Users/Fahym/Desktop/SoC_Project/ --output-directory=C:/Users/Fahym/Desktop/SoC_Project/ --report-file=sopcinfo:C:/Users/Fahym/Desktop/SoC_Project/TP_Montre.sopcinfo --report-file=html:C:/Users/Fahym/Desktop/SoC_Project/TP_Montre.html --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C20F484C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/Fahym/Desktop/SoC_Project/TP_Montre.qsys
+Progress: Loading SoC_Project/TP_Montre.qsys
+Progress: Reading input file
+Progress: Adding CLK_50 [clock_source 13.0]
+Progress: Parameterizing module CLK_50
+Progress: Adding PLL [altera_up_clocks 13.0]
+Warning: PLL: Component type altera_up_clocks is not in the library
+Progress: Parameterizing module PLL
+Progress: Adding CPU [altera_nios2_qsys 13.0]
+Progress: Parameterizing module CPU
+Progress: Adding SDRAM_controller [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module SDRAM_controller
+Progress: Adding JTAG_UART [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module JTAG_UART
+Progress: Adding SYS_Id [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module SYS_Id
+Progress: Adding Timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module Timer
+Progress: Adding KEY [altera_up_avalon_parallel_port 13.0]
+Warning: KEY: Component type altera_up_avalon_parallel_port is not in the library
+Progress: Parameterizing module KEY
+Progress: Adding SW [altera_up_avalon_parallel_port 13.0]
+Warning: SW: Component type altera_up_avalon_parallel_port is not in the library
+Progress: Parameterizing module SW
+Progress: Adding HEX [altera_up_avalon_parallel_port 13.0]
+Warning: HEX: Component type altera_up_avalon_parallel_port is not in the library
+Progress: Parameterizing module HEX
+Progress: Adding LEDG [altera_up_avalon_parallel_port 13.0]
+Warning: LEDG: Component type altera_up_avalon_parallel_port is not in the library
+Progress: Parameterizing module LEDG
+Progress: Adding LEDR [altera_up_avalon_parallel_port 13.0]
+Warning: LEDR: Component type altera_up_avalon_parallel_port is not in the library
+Progress: Parameterizing module LEDR
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Error: TP_Montre.PLL: Component altera_up_clocks 13.0 not found or could not be instantiated
+Warning: TP_Montre.CPU: The clock source connected to the Nios's clock input has an unknown clock frequency.
+Error: TP_Montre.SDRAM_controller: Unknown input clock frequency.
+Error: TP_Montre.SDRAM_controller: Calculated CAS latency is 0 ns.
+Error: TP_Montre.SDRAM_controller: Invalid access time t_ac (must be < 0 ns).
+Info: TP_Montre.SYS_Id: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: TP_Montre.SYS_Id: Time stamp will be automatically updated when this component is generated.
+Warning: TP_Montre.Timer: Period validation cannot be done because input clock is unknown.
+Error: TP_Montre.KEY: Component altera_up_avalon_parallel_port 13.0 not found or could not be instantiated
+Error: TP_Montre.SW: Component altera_up_avalon_parallel_port 13.0 not found or could not be instantiated
+Error: TP_Montre.HEX: Component altera_up_avalon_parallel_port 13.0 not found or could not be instantiated
+Error: TP_Montre.LEDG: Component altera_up_avalon_parallel_port 13.0 not found or could not be instantiated
+Error: TP_Montre.LEDR: Component altera_up_avalon_parallel_port 13.0 not found or could not be instantiated
+Error: TP_Montre.PLL.sys_clk_reset/CPU.reset_n: Illegal connection start (PLL.sys_clk_reset is an end interface)
+Error: TP_Montre.PLL.sys_clk_reset/SDRAM_controller.reset: Illegal connection start (PLL.sys_clk_reset is an end interface)
+Error: TP_Montre.PLL.sys_clk/JTAG_UART.clk: Illegal connection start (PLL.sys_clk is an end interface)
+Error: TP_Montre.PLL.sys_clk_reset/JTAG_UART.reset: Illegal connection start (PLL.sys_clk_reset is an end interface)
+Error: TP_Montre.PLL.sys_clk/SYS_Id.clk: Illegal connection start (PLL.sys_clk is an end interface)
+Error: TP_Montre.PLL.sys_clk_reset/SYS_Id.reset: Illegal connection start (PLL.sys_clk_reset is an end interface)
+Error: TP_Montre.PLL.sys_clk/Timer.clk: Illegal connection start (PLL.sys_clk is an end interface)
+Error: TP_Montre.PLL.sys_clk_reset/Timer.reset: Illegal connection start (PLL.sys_clk_reset is an end interface)
+Error: TP_Montre.PLL.sys_clk/KEY.clock_reset: Illegal connection start (PLL.sys_clk is an end interface)
+Error: TP_Montre.PLL.sys_clk_reset/KEY.clock_reset_reset: Illegal connection start (PLL.sys_clk_reset is an end interface)
+Error: TP_Montre.PLL.sys_clk/SW.clock_reset: Illegal connection start (PLL.sys_clk is an end interface)
+Error: TP_Montre.PLL.sys_clk_reset/SW.clock_reset_reset: Illegal connection start (PLL.sys_clk_reset is an end interface)
+Error: TP_Montre.PLL.sys_clk/HEX.clock_reset: Illegal connection start (PLL.sys_clk is an end interface)
+Error: TP_Montre.PLL.sys_clk_reset/HEX.clock_reset_reset: Illegal connection start (PLL.sys_clk_reset is an end interface)
+Error: TP_Montre.PLL.sys_clk/LEDG.clock_reset: Illegal connection start (PLL.sys_clk is an end interface)
+Error: TP_Montre.PLL.sys_clk_reset/LEDG.clock_reset_reset: Illegal connection start (PLL.sys_clk_reset is an end interface)
+Error: TP_Montre.PLL.sys_clk/LEDR.clock_reset: Illegal connection start (PLL.sys_clk is an end interface)
+Error: TP_Montre.PLL.sys_clk_reset/LEDR.clock_reset_reset: Illegal connection start (PLL.sys_clk_reset is an end interface)
+Error: TP_Montre.PLL.sys_clk/CPU.clk: Illegal connection start (PLL.sys_clk is an end interface)
+Error: TP_Montre.PLL.sys_clk/SDRAM_controller.clk: Illegal connection start (PLL.sys_clk is an end interface)
+Info: ip-generate succeeded.
+Error: Validation of the system failed
+Error: There were errors creating the testbench system.
+Info: Finished: Create testbench Qsys system
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/Users/Fahym/Desktop/SoC_Project/ --output-directory=C:/Users/Fahym/Desktop/SoC_Project/TP_Montre/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:C:/Users/Fahym/Desktop/SoC_Project/TP_Montre.sopcinfo --report-file=html:C:/Users/Fahym/Desktop/SoC_Project/TP_Montre.html --report-file=qip:C:/Users/Fahym/Desktop/SoC_Project/TP_Montre/synthesis/TP_Montre.qip --report-file=cmp:C:/Users/Fahym/Desktop/SoC_Project/TP_Montre.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C20F484C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/Fahym/Desktop/SoC_Project/TP_Montre.qsys --language=VHDL
+Progress: Loading SoC_Project/TP_Montre.qsys
+Progress: Reading input file
+Progress: Adding CLK_50 [clock_source 13.0]
+Progress: Parameterizing module CLK_50
+Progress: Adding PLL [altera_up_clocks 13.0]
+Warning: PLL: Component type altera_up_clocks is not in the library
+Progress: Parameterizing module PLL
+Progress: Adding CPU [altera_nios2_qsys 13.0]
+Progress: Parameterizing module CPU
+Progress: Adding SDRAM_controller [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module SDRAM_controller
+Progress: Adding JTAG_UART [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module JTAG_UART
+Progress: Adding SYS_Id [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module SYS_Id
+Progress: Adding Timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module Timer
+Progress: Adding KEY [altera_up_avalon_parallel_port 13.0]
+Warning: KEY: Component type altera_up_avalon_parallel_port is not in the library
+Progress: Parameterizing module KEY
+Progress: Adding SW [altera_up_avalon_parallel_port 13.0]
+Warning: SW: Component type altera_up_avalon_parallel_port is not in the library
+Progress: Parameterizing module SW
+Progress: Adding HEX [altera_up_avalon_parallel_port 13.0]
+Warning: HEX: Component type altera_up_avalon_parallel_port is not in the library
+Progress: Parameterizing module HEX
+Progress: Adding LEDG [altera_up_avalon_parallel_port 13.0]
+Warning: LEDG: Component type altera_up_avalon_parallel_port is not in the library
+Progress: Parameterizing module LEDG
+Progress: Adding LEDR [altera_up_avalon_parallel_port 13.0]
+Warning: LEDR: Component type altera_up_avalon_parallel_port is not in the library
+Progress: Parameterizing module LEDR
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Error: TP_Montre.PLL: Component altera_up_clocks 13.0 not found or could not be instantiated
+Warning: TP_Montre.CPU: The clock source connected to the Nios's clock input has an unknown clock frequency.
+Error: TP_Montre.SDRAM_controller: Unknown input clock frequency.
+Error: TP_Montre.SDRAM_controller: Calculated CAS latency is 0 ns.
+Error: TP_Montre.SDRAM_controller: Invalid access time t_ac (must be < 0 ns).
+Info: TP_Montre.SYS_Id: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: TP_Montre.SYS_Id: Time stamp will be automatically updated when this component is generated.
+Warning: TP_Montre.Timer: Period validation cannot be done because input clock is unknown.
+Error: TP_Montre.KEY: Component altera_up_avalon_parallel_port 13.0 not found or could not be instantiated
+Error: TP_Montre.SW: Component altera_up_avalon_parallel_port 13.0 not found or could not be instantiated
+Error: TP_Montre.HEX: Component altera_up_avalon_parallel_port 13.0 not found or could not be instantiated
+Error: TP_Montre.LEDG: Component altera_up_avalon_parallel_port 13.0 not found or could not be instantiated
+Error: TP_Montre.LEDR: Component altera_up_avalon_parallel_port 13.0 not found or could not be instantiated
+Error: TP_Montre.PLL.sys_clk_reset/CPU.reset_n: Illegal connection start (PLL.sys_clk_reset is an end interface)
+Error: TP_Montre.PLL.sys_clk_reset/SDRAM_controller.reset: Illegal connection start (PLL.sys_clk_reset is an end interface)
+Error: TP_Montre.PLL.sys_clk/JTAG_UART.clk: Illegal connection start (PLL.sys_clk is an end interface)
+Error: TP_Montre.PLL.sys_clk_reset/JTAG_UART.reset: Illegal connection start (PLL.sys_clk_reset is an end interface)
+Error: TP_Montre.PLL.sys_clk/SYS_Id.clk: Illegal connection start (PLL.sys_clk is an end interface)
+Error: TP_Montre.PLL.sys_clk_reset/SYS_Id.reset: Illegal connection start (PLL.sys_clk_reset is an end interface)
+Error: TP_Montre.PLL.sys_clk/Timer.clk: Illegal connection start (PLL.sys_clk is an end interface)
+Error: TP_Montre.PLL.sys_clk_reset/Timer.reset: Illegal connection start (PLL.sys_clk_reset is an end interface)
+Error: TP_Montre.PLL.sys_clk/KEY.clock_reset: Illegal connection start (PLL.sys_clk is an end interface)
+Error: TP_Montre.PLL.sys_clk_reset/KEY.clock_reset_reset: Illegal connection start (PLL.sys_clk_reset is an end interface)
+Error: TP_Montre.PLL.sys_clk/SW.clock_reset: Illegal connection start (PLL.sys_clk is an end interface)
+Error: TP_Montre.PLL.sys_clk_reset/SW.clock_reset_reset: Illegal connection start (PLL.sys_clk_reset is an end interface)
+Error: TP_Montre.PLL.sys_clk/HEX.clock_reset: Illegal connection start (PLL.sys_clk is an end interface)
+Error: TP_Montre.PLL.sys_clk_reset/HEX.clock_reset_reset: Illegal connection start (PLL.sys_clk_reset is an end interface)
+Error: TP_Montre.PLL.sys_clk/LEDG.clock_reset: Illegal connection start (PLL.sys_clk is an end interface)
+Error: TP_Montre.PLL.sys_clk_reset/LEDG.clock_reset_reset: Illegal connection start (PLL.sys_clk_reset is an end interface)
+Error: TP_Montre.PLL.sys_clk/LEDR.clock_reset: Illegal connection start (PLL.sys_clk is an end interface)
+Error: TP_Montre.PLL.sys_clk_reset/LEDR.clock_reset_reset: Illegal connection start (PLL.sys_clk_reset is an end interface)
+Error: TP_Montre.PLL.sys_clk/CPU.clk: Illegal connection start (PLL.sys_clk is an end interface)
+Error: TP_Montre.PLL.sys_clk/SDRAM_controller.clk: Illegal connection start (PLL.sys_clk is an end interface)
+Info: TP_Montre: Generating TP_Montre "TP_Montre" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 12 modules, 38 connections
+Info: No custom instruction connections, skipping transform 
+Error: An unexpected error occurred during Generate: java.lang.NullPointerException

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable>
+  <columns>
+   <connections preferredWidth="143" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="530" />
+   <clocksource preferredWidth="530" />
+   <frequency preferredWidth="510" />
+  </columns>
+ </clocktable>
+ <library expandedCategories="Project,Library,Library/PLL" />
+ <window width="1366" height="738" x="0" y="0" />
+ <hdlexample language="VHDL" />
+ <generation
+   synthesis="VHDL"
+   simulation="NONE"
+   testbench_system="NONE"
+   block_symbol_file="0" />
+</preferences>
